@@ -2,6 +2,7 @@ package exact
 
 import (
 	"errors"
+	"reflect"
 	"slices"
 	"testing"
 )
@@ -43,25 +44,6 @@ func TestRegistryDuplicateSkill(t *testing.T) {
 	}
 }
 
-// Every exercise from every generator must be gradable, and its own answer
-// must be graded correct. The property tests in step 6 check the values
-// against an independent oracle; this only checks the wiring.
-func TestEveryAnswerGradesCorrect(t *testing.T) {
-	reg, err := Default()
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	for _, id := range reg.SkillIDs() {
-		g, _ := reg.Generator(id)
-		for level := 1; level <= g.Levels(); level++ {
-			for seed := uint64(1); seed <= 200; seed++ {
-				assertSelfGradesCorrect(t, g, seed, level)
-			}
-		}
-	}
-}
-
 func TestGenerateUnknownLevel(t *testing.T) {
 	g := equivalentFractions{}
 	for _, level := range []int{0, -1, g.Levels() + 1} {
@@ -76,8 +58,8 @@ func TestGenerateIsDeterministic(t *testing.T) {
 	for level := 1; level <= g.Levels(); level++ {
 		a, _ := g.Generate(42, level)
 		b, _ := g.Generate(42, level)
-		if a.Prompt != b.Prompt || a.Answer.Cmp(b.Answer) != 0 {
-			t.Errorf("level %d: seed 42 gave %q = %v, then %q = %v", level, a.Prompt, a.Answer, b.Prompt, b.Answer)
+		if !reflect.DeepEqual(a, b) {
+			t.Errorf("level %d: seed 42 gave %+v, then %+v", level, a, b)
 		}
 	}
 }

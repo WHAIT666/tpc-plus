@@ -111,9 +111,20 @@ func forEachSeed(t *testing.T, id string, level int, check func(exact.Exercise))
 func assertGradesOwnAnswerCorrect(t *testing.T, e exact.Exercise) {
 	t.Helper()
 
-	typed, err := grading.Format(e.Answer, e.Kind)
-	if err != nil {
-		t.Fatalf("seed %d: format answer %v as %v: %v", e.Seed, e.Answer, e.Kind, err)
+	var typed string
+	if e.Kind == grading.KindChoice {
+		// The child types the number shown next to the option, from 1.
+		for i, o := range e.Options {
+			if o.Correct {
+				typed = strconv.Itoa(i + 1)
+			}
+		}
+	} else {
+		var err error
+		typed, err = grading.Format(e.Answer, e.Kind)
+		if err != nil {
+			t.Fatalf("seed %d: format answer %v as %v: %v", e.Seed, e.Answer, e.Kind, err)
+		}
 	}
 	res, err := grading.Grade(typed, e.Key())
 	if err != nil {

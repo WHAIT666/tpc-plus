@@ -25,18 +25,68 @@ type Exercise struct {
 	// Prompt is shown to the child, in European Portuguese.
 	Prompt string `json:"prompt"`
 
-	Kind               grading.Kind `json:"kind"`
-	Answer             *big.Rat     `json:"answer"`
-	RequireIrreducible bool         `json:"require_irreducible,omitempty"`
+	Kind grading.Kind `json:"kind"`
+
+	// Answer is the canonical answer for every kind except KindChoice.
+	Answer             *big.Rat `json:"answer,omitempty"`
+	RequireIrreducible bool     `json:"require_irreducible,omitempty"`
+
+	// Options are the choices of a KindChoice exercise, in display order.
+	// Exactly one is correct.
+	Options []Option `json:"options,omitempty"`
 }
 
+// Option is one choice of a KindChoice exercise.
+type Option struct {
+	Text    string `json:"text"`
+	Correct bool   `json:"correct,omitempty"`
+
+	// Misconception names the mistake that leads a child to this wrong
+	// option, so feedback can explain it. Empty for the correct option.
+	Misconception Misconception `json:"misconception,omitempty"`
+}
+
+// Misconception is a known reasoning mistake that a distractor is built
+// from. Distractors come from real mistakes, never random numbers.
+type Misconception string
+
+const (
+	// MisconceptionAddSame adds the same number to both terms: 3/5 → 5/7.
+	MisconceptionAddSame Misconception = "add_same_to_both_terms"
+
+	// MisconceptionOneTerm multiplies only one term: 3/5 → 6/5 or 3/10.
+	MisconceptionOneTerm Misconception = "multiply_one_term"
+
+	// MisconceptionSwap swaps numerator and denominator: 3/5 → 5/3.
+	MisconceptionSwap Misconception = "swap_terms"
+)
+
 // Key returns the answer key the grader checks the child's answer against.
+// A choice exercise without exactly one correct option gives a key the
+// grader rejects with grading.ErrInvalidKey.
 func (e Exercise) Key() grading.Key {
-	return grading.Key{
+	k := grading.Key{
 		Kind:               e.Kind,
 		Value:              e.Answer,
 		RequireIrreducible: e.RequireIrreducible,
 	}
+	if e.Kind != grading.KindChoice {
+		return k
+	}
+
+	k.Choice = -1
+	correct := 0
+	for i, o := range e.Options {
+		k.Options = append(k.Options, o.Text)
+		if o.Correct {
+			k.Choice = i
+			correct++
+		}
+	}
+	if correct != 1 {
+		k.Choice = -1
+	}
+	return k
 }
 
 // Generator produces the exercises of one skill.
