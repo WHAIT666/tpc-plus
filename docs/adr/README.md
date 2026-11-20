@@ -22,3 +22,5 @@ One file per decision: context, decision, alternatives, consequences. New decisi
 | [ADR-016](016-mvp-subjects-maths-and-hgp.md) | MVP subjects are Maths and History & Geography of Portugal | Accepted |
 | [ADR-017](017-openapi-contract.md) | OpenAPI as the API contract | Proposed |
 | [ADR-018](018-privacy-safe-crash-reporting.md) | Privacy-safe crash reporting on Android | Proposed |
+| [ADR-019](019-strict-answer-input.md) | Strict answer input rules | Accepted |
+| [ADR-020](020-misconception-distractors.md) | Distractors come from named misconceptions | Accepted |
