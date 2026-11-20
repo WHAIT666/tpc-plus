@@ -20,7 +20,10 @@ One file per decision: context, decision, alternatives, consequences. New decisi
 | [ADR-014](014-native-kotlin-compose.md) | Native Kotlin + Jetpack Compose | Accepted |
 | [ADR-015](015-per-topic-review-mode.md) | Per-topic review mode — conservative, then dynamic | Accepted |
 | [ADR-016](016-mvp-subjects-maths-and-hgp.md) | MVP subjects are Maths and History & Geography of Portugal | Accepted |
-| [ADR-017](017-openapi-contract.md) | OpenAPI as the API contract | Proposed |
+| [ADR-017](017-openapi-contract.md) | OpenAPI as the API contract | Accepted |
 | [ADR-018](018-privacy-safe-crash-reporting.md) | Privacy-safe crash reporting on Android | Proposed |
 | [ADR-019](019-strict-answer-input.md) | Strict answer input rules | Accepted |
 | [ADR-020](020-misconception-distractors.md) | Distractors come from named misconceptions | Accepted |
+| [ADR-021](021-early-eu-hosting-and-device-pairing.md) | Early EU hosting and device pairing for M2 | Accepted |
+| [ADR-022](022-stateless-exercise-references.md) | Stateless exercise references | Accepted |
+| [ADR-023](023-sideloaded-apk-with-in-app-update.md) | Sideloaded APK with in-app update | Accepted |

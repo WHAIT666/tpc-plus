@@ -6,7 +6,7 @@
 
 TPC+ ("TPC" is Portuguese for *trabalhos para casa*, homework) is an Android tablet app and a Go backend built for one real user: a 5th-grade student in Portugal who struggles with maths. When she finishes her homework, in any subject, she photographs the page. The app works out the subject and the topic and gives her new exercises she has not seen, checked before she ever sees them.
 
-**Status:** M0 (discovery) done, apart from the observation session, the photos and the tablet check · **M1 (exact maths engine) done** · M2 (usable app) next · see [Roadmap](#roadmap)
+**Status:** M0 (discovery) done, apart from the observation session, the photos and the tablet check · **M1 (exact maths engine) done** · M2 (usable app) planned · see [Roadmap](#roadmap)
 
 ---
 
@@ -111,7 +111,7 @@ Skills: `mat.fracoes_equivalentes`, `mat.fracoes_somar_subtrair`, `mat.fracao_de
 |---|---|---|
 | M0 · Discovery | Interviews, school report, consent, topic choice | 🟡 Mostly done |
 | M1 · Exact engine | Maths generators, grader, parser, property tests, fuzzing, CLI | ✅ Done |
-| M2 · Usable app | Kotlin app, manual topic choice, 5-exercise session | ⚪ |
+| M2 · Usable app | Kotlin app, manual topic choice, 5-exercise session | 🟡 Planned ([spec](docs/m2-spec.md)) |
 | M3 · Data and security | Postgres, families, tokens, idempotency, progress | ⚪ |
 | M4 · Scan and classify | ML Kit, OCR gate, classification eval | ⚪ |
 | M5 · HGP (modes B + C) | Grounded generation, verifier, review, budget | ⚪ |
@@ -130,6 +130,7 @@ The user is a minor. Her parents gave written consent before any of her data was
 - [Decision records](docs/adr/)
 - [Milestones](docs/milestones.md)
 - [M1 specification](docs/m1-spec.md)
+- [M2 specification](docs/m2-spec.md)
 - [Discovery summary](docs/m0-discovery.md)
 - [Devlog](docs/devlog/)
 

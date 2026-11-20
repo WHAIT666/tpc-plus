@@ -61,11 +61,15 @@ flowchart TD
 
 ```text
 backend/
-  cmd/api/                 HTTP server
+  cmd/api/                 HTTP server (M2)
+  cmd/admin/               pairing codes, session report (M2)
   cmd/practice/            terminal practice session (M1)
   cmd/eval/                classification and question evaluation
   cmd/review/              human review queue (CLI)
-  internal/httpapi/        handlers, middleware, size limits
+  internal/httpapi/        generated types (OpenAPI), handlers, middleware, size limits
+  internal/feedback/       Portuguese messages for the child, shared by CLI and API (M2)
+  internal/devices/        M2 device pairing, replaced by authz in M3
+  internal/attemptlog/     M2 append-only JSONL log, replaced by store in M3
   internal/authz/          tokens, refresh, family isolation, roles
   internal/ocrgate/        OCR quality rules
   internal/classify/       subject/topic classification + sufficiency
