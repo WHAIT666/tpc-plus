@@ -1,0 +1,34 @@
+# Private data: real homework photos, notes about the child. Never commit.
+private/
+data/raw/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.keystore
+*.jks
+
+# Go
+backend/bin/
+*.test
+*.out
+coverage.*
+backend/testdata/fuzz/**/corpus-local/
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.kotlin/
+
+# Editors and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local tooling
+.claude/
