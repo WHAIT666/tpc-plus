@@ -1,0 +1,202 @@
+[
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 1,
+    "level": 2,
+    "prompt": "Simplifica 5/50. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/10",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 2,
+    "level": 2,
+    "prompt": "Simplifica 5/20. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/4",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 3,
+    "level": 2,
+    "prompt": "Simplifica 36/42. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "6/7",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 4,
+    "level": 2,
+    "prompt": "Simplifica 2/4. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/2",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 5,
+    "level": 2,
+    "prompt": "Simplifica 48/54. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "8/9",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 6,
+    "level": 2,
+    "prompt": "Simplifica 18/42. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "3/7",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 7,
+    "level": 2,
+    "prompt": "Simplifica 14/16. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "7/8",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 8,
+    "level": 2,
+    "prompt": "Simplifica 5/50. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/10",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 9,
+    "level": 2,
+    "prompt": "Simplifica 12/42. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "2/7",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 10,
+    "level": 2,
+    "prompt": "Simplifica 2/12. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/6",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 11,
+    "level": 2,
+    "prompt": "Simplifica 10/45. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "2/9",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 12,
+    "level": 2,
+    "prompt": "Simplifica 9/12. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "3/4",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 13,
+    "level": 2,
+    "prompt": "Simplifica 14/18. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "7/9",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 14,
+    "level": 2,
+    "prompt": "Simplifica 3/30. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/10",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 15,
+    "level": 2,
+    "prompt": "Simplifica 2/24. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/12",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 16,
+    "level": 2,
+    "prompt": "Simplifica 6/8. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "3/4",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 17,
+    "level": 2,
+    "prompt": "Simplifica 18/21. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "6/7",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 18,
+    "level": 2,
+    "prompt": "Simplifica 5/15. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "1/3",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 19,
+    "level": 2,
+    "prompt": "Simplifica 18/66. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "3/11",
+    "require_irreducible": true
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 20,
+    "level": 2,
+    "prompt": "Simplifica 30/42. Escreve a fração irredutível.",
+    "kind": "fraction",
+    "answer": "5/7",
+    "require_irreducible": true
+  }
+]

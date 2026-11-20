@@ -1,0 +1,182 @@
+[
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 1,
+    "level": 1,
+    "prompt": "Completa: 9/10 = ?/20",
+    "kind": "integer",
+    "answer": "18"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 2,
+    "level": 1,
+    "prompt": "Completa: 1/2 = ?/4",
+    "kind": "integer",
+    "answer": "2"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 3,
+    "level": 1,
+    "prompt": "Completa: 2/3 = ?/12",
+    "kind": "integer",
+    "answer": "8"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 4,
+    "level": 1,
+    "prompt": "Completa: 7/8 = ?/40",
+    "kind": "integer",
+    "answer": "35"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 5,
+    "level": 1,
+    "prompt": "Completa: 4/9 = ?/45",
+    "kind": "integer",
+    "answer": "20"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 6,
+    "level": 1,
+    "prompt": "Completa: 1/5 = ?/10",
+    "kind": "integer",
+    "answer": "2"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 7,
+    "level": 1,
+    "prompt": "Completa: 5/7 = ?/35",
+    "kind": "integer",
+    "answer": "25"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 8,
+    "level": 1,
+    "prompt": "Completa: 1/4 = ?/8",
+    "kind": "integer",
+    "answer": "2"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 9,
+    "level": 1,
+    "prompt": "Completa: 3/4 = ?/8",
+    "kind": "integer",
+    "answer": "6"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 10,
+    "level": 1,
+    "prompt": "Completa: 3/4 = ?/8",
+    "kind": "integer",
+    "answer": "6"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 11,
+    "level": 1,
+    "prompt": "Completa: 3/10 = ?/50",
+    "kind": "integer",
+    "answer": "15"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 12,
+    "level": 1,
+    "prompt": "Completa: 4/5 = ?/15",
+    "kind": "integer",
+    "answer": "12"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 13,
+    "level": 1,
+    "prompt": "Completa: 1/2 = ?/10",
+    "kind": "integer",
+    "answer": "5"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 14,
+    "level": 1,
+    "prompt": "Completa: 5/7 = ?/14",
+    "kind": "integer",
+    "answer": "10"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 15,
+    "level": 1,
+    "prompt": "Completa: 1/4 = ?/12",
+    "kind": "integer",
+    "answer": "3"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 16,
+    "level": 1,
+    "prompt": "Completa: 5/8 = ?/40",
+    "kind": "integer",
+    "answer": "25"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 17,
+    "level": 1,
+    "prompt": "Completa: 1/2 = ?/8",
+    "kind": "integer",
+    "answer": "4"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 18,
+    "level": 1,
+    "prompt": "Completa: 2/7 = ?/28",
+    "kind": "integer",
+    "answer": "8"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 19,
+    "level": 1,
+    "prompt": "Completa: 1/5 = ?/15",
+    "kind": "integer",
+    "answer": "3"
+  },
+  {
+    "skill_id": "mat.fracoes_equivalentes",
+    "version": 1,
+    "seed": 20,
+    "level": 1,
+    "prompt": "Completa: 1/7 = ?/35",
+    "kind": "integer",
+    "answer": "5"
+  }
+]

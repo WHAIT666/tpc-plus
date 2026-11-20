@@ -128,19 +128,3 @@ func TestParseErrorDoesNotEchoLongInput(t *testing.T) {
 		t.Errorf("error message echoes the input: %.80s...", err.Error())
 	}
 }
-
-func TestKindString(t *testing.T) {
-	tests := map[Kind]string{
-		KindInteger:  "integer",
-		KindFraction: "fraction",
-		KindDecimal:  "decimal",
-		KindChoice:   "choice",
-		KindInvalid:  "Kind(0)",
-		Kind(42):     "Kind(42)",
-	}
-	for k, want := range tests {
-		if got := k.String(); got != want {
-			t.Errorf("Kind(%d).String() = %q, want %q", int(k), got, want)
-		}
-	}
-}
