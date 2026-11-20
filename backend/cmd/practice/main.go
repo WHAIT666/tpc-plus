@@ -182,5 +182,5 @@ func (s *session) printScore() {
 // printf ignores write errors: a terminal that cannot be written to has no
 // one reading it either.
 func (s *session) printf(format string, args ...any) {
-	fmt.Fprintf(s.out, format, args...)
+	_, _ = fmt.Fprintf(s.out, format, args...)
 }

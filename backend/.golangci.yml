@@ -1,0 +1,21 @@
+version: "2"
+
+linters:
+  # errcheck, govet, ineffassign, staticcheck and unused.
+  default: standard
+  enable:
+    - errorlint # errors compared with == or type-asserted instead of errors.Is/As
+    - gocritic
+    - misspell
+    - unconvert
+    - usestdlibvars
+  settings:
+    misspell:
+      # Comments are in English; strings shown to the child are in
+      # Portuguese ("denominador"), so only comments are checked.
+      mode: restricted
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
