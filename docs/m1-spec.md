@@ -4,15 +4,15 @@
 
 **Done when:**
 
-- [ ] 3 skills × 3 levels implemented (fractions first, see [Skills](#skills)).
-- [ ] Property tests verify at least 10,000 seeds per skill and level against an **independent implementation** (90,000+ exercises). This number goes in the README.
-- [ ] Golden tests pin the output of fixed seeds.
-- [ ] The answer parser is fuzzed and never panics.
-- [ ] `go run ./cmd/practice` runs a 5-exercise session in the terminal.
-- [ ] CI is green: vet, lint, tests with `-race`, a short fuzz run.
-- [ ] Docs: README Evidence row, devlog entry, CLI GIF in `docs/media/`, ADRs for any new decisions ([Definition of done](milestones.md#definition-of-done)).
+- [x] 3 skills × 3 levels implemented (fractions first, see [Skills](#skills)).
+- [x] Property tests verify at least 10,000 seeds per skill and level against an **independent implementation** (90,000+ exercises). This number goes in the README.
+- [x] Golden tests pin the output of fixed seeds.
+- [x] The answer parser is fuzzed and never panics.
+- [x] `go run ./cmd/practice` runs a 5-exercise session in the terminal.
+- [x] CI is green: vet, lint, tests with `-race`, a short fuzz run.
+- [x] Docs: README Evidence row, devlog entry, CLI GIF in `docs/media/`, ADRs for any new decisions ([Definition of done](milestones.md#definition-of-done)).
 
-> **How we work:** you write the code. Each step ends with a commit on a branch; I review it like a senior reviewer would (correctness, tests, naming, Go idioms) before you move on. If you're stuck for more than ~30 minutes, ask with the error and what you tried.
+> **How we work:** each step ends with a small commit on a branch and a review (correctness, tests against this spec, naming, Go idioms) before the next step starts. Results: [M1 devlog](devlog/2026-11-20-m1-exact-engine.md).
 
 ---
 

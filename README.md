@@ -1,10 +1,12 @@
 # TPC+
 
+[![backend](https://github.com/WHAIT666/tpc-plus/actions/workflows/backend.yml/badge.svg)](https://github.com/WHAIT666/tpc-plus/actions/workflows/backend.yml)
+
 > Photograph a finished homework page. Get fresh practice on the same topic, at the right level, with instant feedback.
 
 TPC+ ("TPC" is Portuguese for *trabalhos para casa*, homework) is an Android tablet app and a Go backend built for one real user: a 5th-grade student in Portugal who struggles with maths. When she finishes her homework, in any subject, she photographs the page. The app works out the subject and the topic and gives her new exercises she has not seen, checked before she ever sees them.
 
-**Status:** M0 (discovery) done, apart from the observation session, the photos and the tablet check · M1 (exact maths engine) starting · see [Roadmap](#roadmap)
+**Status:** M0 (discovery) done, apart from the observation session, the photos and the tablet check · **M1 (exact maths engine) done** · M2 (usable app) next · see [Roadmap](#roadmap)
 
 ---
 
@@ -53,7 +55,8 @@ The features below are designed and documented, and get built milestone by miles
 
 | Metric | Value | How it is measured |
 |---|---|---|
-| Maths exercises verified by an independent implementation | *M1 — not measured yet* | Property tests over N seeds × 3 levels per skill |
+| Maths exercises verified by an independent implementation | **90,000**, 0 failures (3 skills × 3 levels × 10,000 seeds, in 0.4 s) | Property tests: an oracle in a separate test package recomputes every answer from the prompt with `int64` ([M1 devlog](docs/devlog/2026-11-20-m1-exact-engine.md)) |
+| Answer parser robustness | **25.1 million** fuzzed inputs in 60 s, 0 crashes | `go test -fuzz=FuzzParse`; 10 s on every CI run |
 | Topic classification accuracy (top-1 / top-3) | *M4 — not measured yet* | Labelled eval set of real homework photos |
 | Mode B pass rate in human review (95% Wilson lower bound) | *M5 — not measured yet* | Stratified review per topic |
 | p95 latency per session | *M6 — not measured yet* | Production metrics |
@@ -75,7 +78,11 @@ The features below are designed and documented, and get built milestone by miles
 ## Repository layout
 
 ```text
-backend/            Go service, CLIs and tests (from M1)
+backend/
+  cmd/practice/       Terminal practice session
+  internal/grading/   Answer parser (fuzzed), exact grader, formatting
+  internal/engine/exact/  Deterministic generators, registry, property and golden tests
+  testdata/golden/    Pinned generator output
 android/            Kotlin + Compose app (from M2)
 docs/adr/           Architecture decision records
 docs/devlog/        What was built, what broke, what was learned
@@ -85,14 +92,25 @@ docs/architecture.md, docs/milestones.md, docs/m1-spec.md, docs/m0-discovery.md
 
 ## Getting started
 
-Instructions come with M1. The goal is one command for each part: `go test ./...` for the backend and the CLI below for a practice session in the terminal.
+The backend needs only Go (the version in [`backend/go.mod`](backend/go.mod)), no other dependencies.
+
+```bash
+cd backend
+go test ./...                                   # 221 tests, including 90,000 property-checked exercises
+go run ./cmd/practice -level 3 -n 5             # a practice session in the terminal
+go run ./cmd/practice -skill mat.fracoes_somar_subtrair -level 2 -seed 42   # replay a session exactly
+```
+
+![A practice session in the terminal: options, feedback that names the misconception, a hint after invalid input, and the score](docs/media/m1_cli-session_2026-11-20.gif)
+
+Skills: `mat.fracoes_equivalentes`, `mat.fracoes_somar_subtrair`, `mat.fracao_de_quantidade`, each with levels 1–3.
 
 ## Roadmap
 
 | Milestone | Scope | Status |
 |---|---|---|
 | M0 · Discovery | Interviews, school report, consent, topic choice | 🟡 Mostly done |
-| M1 · Exact engine | Maths generators, grader, parser, property tests, fuzzing, CLI | 🟡 Starting |
+| M1 · Exact engine | Maths generators, grader, parser, property tests, fuzzing, CLI | ✅ Done |
 | M2 · Usable app | Kotlin app, manual topic choice, 5-exercise session | ⚪ |
 | M3 · Data and security | Postgres, families, tokens, idempotency, progress | ⚪ |
 | M4 · Scan and classify | ML Kit, OCR gate, classification eval | ⚪ |
