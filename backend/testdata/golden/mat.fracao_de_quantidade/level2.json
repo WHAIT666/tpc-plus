@@ -1,0 +1,182 @@
+[
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 1,
+    "level": 2,
+    "prompt": "Calcula: 2/3 de 27",
+    "kind": "integer",
+    "answer": "18"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 2,
+    "level": 2,
+    "prompt": "Calcula: 5/6 de 42",
+    "kind": "integer",
+    "answer": "35"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 3,
+    "level": 2,
+    "prompt": "Calcula: 7/8 de 72",
+    "kind": "integer",
+    "answer": "63"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 4,
+    "level": 2,
+    "prompt": "Calcula: 7/10 de 20",
+    "kind": "integer",
+    "answer": "14"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 5,
+    "level": 2,
+    "prompt": "Calcula: 9/10 de 100",
+    "kind": "integer",
+    "answer": "90"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 6,
+    "level": 2,
+    "prompt": "Calcula: 5/6 de 60",
+    "kind": "integer",
+    "answer": "50"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 7,
+    "level": 2,
+    "prompt": "Calcula: 6/7 de 14",
+    "kind": "integer",
+    "answer": "12"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 8,
+    "level": 2,
+    "prompt": "Calcula: 8/9 de 63",
+    "kind": "integer",
+    "answer": "56"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 9,
+    "level": 2,
+    "prompt": "Calcula: 3/8 de 72",
+    "kind": "integer",
+    "answer": "27"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 10,
+    "level": 2,
+    "prompt": "Calcula: 2/3 de 9",
+    "kind": "integer",
+    "answer": "6"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 11,
+    "level": 2,
+    "prompt": "Calcula: 3/8 de 64",
+    "kind": "integer",
+    "answer": "24"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 12,
+    "level": 2,
+    "prompt": "Calcula: 9/10 de 40",
+    "kind": "integer",
+    "answer": "36"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 13,
+    "level": 2,
+    "prompt": "Calcula: 5/7 de 21",
+    "kind": "integer",
+    "answer": "15"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 14,
+    "level": 2,
+    "prompt": "Calcula: 4/5 de 25",
+    "kind": "integer",
+    "answer": "20"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 15,
+    "level": 2,
+    "prompt": "Calcula: 2/5 de 15",
+    "kind": "integer",
+    "answer": "6"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 16,
+    "level": 2,
+    "prompt": "Calcula: 7/8 de 24",
+    "kind": "integer",
+    "answer": "21"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 17,
+    "level": 2,
+    "prompt": "Calcula: 4/5 de 20",
+    "kind": "integer",
+    "answer": "16"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 18,
+    "level": 2,
+    "prompt": "Calcula: 2/3 de 24",
+    "kind": "integer",
+    "answer": "16"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 19,
+    "level": 2,
+    "prompt": "Calcula: 3/10 de 100",
+    "kind": "integer",
+    "answer": "30"
+  },
+  {
+    "skill_id": "mat.fracao_de_quantidade",
+    "version": 1,
+    "seed": 20,
+    "level": 2,
+    "prompt": "Calcula: 7/8 de 72",
+    "kind": "integer",
+    "answer": "63"
+  }
+]

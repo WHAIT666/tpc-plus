@@ -36,6 +36,8 @@ func NewRegistry(gens ...Generator) (*Registry, error) {
 func Default() (*Registry, error) {
 	return NewRegistry(
 		equivalentFractions{},
+		addSubtractFractions{},
+		fractionOfQuantity{},
 	)
 }
 

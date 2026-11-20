@@ -13,7 +13,7 @@ func TestDefaultRegistry(t *testing.T) {
 		t.Fatalf("Default(): %v", err)
 	}
 
-	want := []string{SkillEquivalentFractions}
+	want := []string{SkillFractionOfQuantity, SkillEquivalentFractions, SkillAddSubtractFractions}
 	if got := reg.SkillIDs(); !slices.Equal(got, want) {
 		t.Errorf("SkillIDs() = %v, want %v", got, want)
 	}

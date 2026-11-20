@@ -1,0 +1,182 @@
+[
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 1,
+    "level": 1,
+    "prompt": "Calcula: 10/12 − 2/12",
+    "kind": "fraction",
+    "answer": "2/3"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 2,
+    "level": 1,
+    "prompt": "Calcula: 2/3 − 1/3",
+    "kind": "fraction",
+    "answer": "1/3"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 3,
+    "level": 1,
+    "prompt": "Calcula: 3/4 − 1/4",
+    "kind": "fraction",
+    "answer": "1/2"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 4,
+    "level": 1,
+    "prompt": "Calcula: 7/10 + 6/10",
+    "kind": "fraction",
+    "answer": "13/10"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 5,
+    "level": 1,
+    "prompt": "Calcula: 7/10 − 5/10",
+    "kind": "fraction",
+    "answer": "1/5"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 6,
+    "level": 1,
+    "prompt": "Calcula: 4/6 + 2/6",
+    "kind": "fraction",
+    "answer": "1"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 7,
+    "level": 1,
+    "prompt": "Calcula: 8/9 − 7/9",
+    "kind": "fraction",
+    "answer": "1/9"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 8,
+    "level": 1,
+    "prompt": "Calcula: 1/5 + 1/5",
+    "kind": "fraction",
+    "answer": "2/5"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 9,
+    "level": 1,
+    "prompt": "Calcula: 3/6 − 2/6",
+    "kind": "fraction",
+    "answer": "1/6"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 10,
+    "level": 1,
+    "prompt": "Calcula: 4/5 − 1/5",
+    "kind": "fraction",
+    "answer": "3/5"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 11,
+    "level": 1,
+    "prompt": "Calcula: 11/12 − 7/12",
+    "kind": "fraction",
+    "answer": "1/3"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 12,
+    "level": 1,
+    "prompt": "Calcula: 5/7 − 4/7",
+    "kind": "fraction",
+    "answer": "1/7"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 13,
+    "level": 1,
+    "prompt": "Calcula: 2/3 + 1/3",
+    "kind": "fraction",
+    "answer": "1"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 14,
+    "level": 1,
+    "prompt": "Calcula: 6/8 + 6/8",
+    "kind": "fraction",
+    "answer": "3/2"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 15,
+    "level": 1,
+    "prompt": "Calcula: 2/5 − 1/5",
+    "kind": "fraction",
+    "answer": "1/5"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 16,
+    "level": 1,
+    "prompt": "Calcula: 6/10 − 4/10",
+    "kind": "fraction",
+    "answer": "1/5"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 17,
+    "level": 1,
+    "prompt": "Calcula: 1/3 + 2/3",
+    "kind": "fraction",
+    "answer": "1"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 18,
+    "level": 1,
+    "prompt": "Calcula: 2/8 + 2/8",
+    "kind": "fraction",
+    "answer": "1/2"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 19,
+    "level": 1,
+    "prompt": "Calcula: 5/6 − 3/6",
+    "kind": "fraction",
+    "answer": "1/3"
+  },
+  {
+    "skill_id": "mat.fracoes_somar_subtrair",
+    "version": 1,
+    "seed": 20,
+    "level": 1,
+    "prompt": "Calcula: 8/9 − 3/9",
+    "kind": "fraction",
+    "answer": "5/9"
+  }
+]
